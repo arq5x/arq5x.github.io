@@ -1,0 +1,14 @@
+---
+title: lumpy
+category: software
+subtitle: a probabilistic framework for SV discovery
+layout: default
+modal-id: 2
+img: lumpy.png
+thumbnail: lumpy.overview.png
+alt: lumpy.png
+manuscript: http://www.genomebiology.com/2014/15/6/R84
+code: https://github.com/arq5x/lumpy-sv
+docs: https://github.com/arq5x/lumpy-sv
+description: LUMPY is a novel and general probabilistic SV discovery framework that naturally integrates multiple SV detection signals, including those generated from read alignments or prior evidence, and that can readily adapt to any additional source of evidence that may become available with future technological advances.
+---

@@ -1,0 +1,28 @@
+---
+layout: blog_default
+---
+<section>
+  <div class="text-center">
+    <h1>{{ page.title }}</h1>
+  </div>
+  <div class="container">
+    <div class="col-md-12 text-center">
+      <strong>{{ page.date | date_to_long_string }}</strong>
+    </div>
+    <div class="col-md-12 text-center">
+      <strong>{{ page.post_author }}</strong>
+    </div>
+    <div class="col-md-12 text-center">    
+  	  <span class="fa-stack fa-4x">
+        <i class="fa fa-circle fa-stack-2x text-secondary"></i>
+        <i class="fa fa-asterisk fa-stack-1x fa-inverse"></i>
+      </span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="col-md-12">
+      {{ content }}
+    </div>
+  </div>
+</section>

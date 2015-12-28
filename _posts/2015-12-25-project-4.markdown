@@ -1,0 +1,14 @@
+---
+title: gqt
+category: software
+subtitle: Genotype Query Tools
+layout: default
+modal-id: 4
+img: gqt.overview.png
+thumbnail: gqt.png
+alt: gqt.png
+manuscript: http://www.genomebiology.com/2014/15/6/R84
+code: https://github.com/ryanlayer/gqt
+docs: https://github.com/ryanlayer/gqt
+description: Genotype Query Tools (GQT) is command line software and a C API for indexing and querying large-scale genotype data sets like those produced by 1000 Genomes, the UK100K, and forthcoming datasets involving millions of genomes. GQT represents genotypes as compressed bitmap indices, which reduce computational burden of variant queries based on sample genotypes, phenotypes, and relationships by orders of magnitude over standard "variant-centric" indexing strategies. This index can significantly expand the capabilities of population-scale analyses by providing interactive-speed queries to data sets with millions of individuals.
+---

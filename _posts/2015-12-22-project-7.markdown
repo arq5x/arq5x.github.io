@@ -1,0 +1,14 @@
+---
+title: vcfanno
+category: software
+subtitle: A fast, flexible toolset for annotating VCF files.
+layout: default
+modal-id: 7
+img: vcfanno.overview.png
+thumbnail: vcfanno.png
+alt: vcfanno.png
+manuscript: https://github.com/brentp/vcfanno
+code: https://github.com/brentp/vcfanno
+docs: https://github.com/brentp/vcfanno
+description: vcfanno annotates a VCF with any number of sorted and tabixed input BED, BAM, and VCF files in parallel. It does this by finding overlaps as it streams over the data and applying user-defined operations on the overlapping annotations.
+---

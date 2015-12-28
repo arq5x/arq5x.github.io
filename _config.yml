@@ -1,0 +1,93 @@
+baseurl: ""
+url: "bousis.github.io"
+permalink: /:categories/:year/:month/:day/:title.html
+
+# For inline code
+markdown: redcarpet
+redcarpet:
+  extensions: ["smart", "tables", "no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
+
+# Site settings
+title: Quinlan Lab @ UU
+email: aaronquinlan@gmail.com
+description: "The Quinlan Laboratory at The University of Utah."
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: DD1144
+  secondary: DD1144  
+  secondary-dark: 737373
+
+category-list: [software, blog]
+
+# Team names, titles and social links
+people:
+- name: Aaron Quinlan
+  pic: aaron
+  position: Principal Investigator
+  social:
+    - title: github
+      url: https://github.com/arq5x
+    - title: twitter
+      url: https://twitter.com/aaronquinlan
+
+- name: Brent Pedersen
+  pic: brent
+  position: Senior Programmer
+  social:
+    - title: github
+      url: https://github.com/brentp
+    - title: twitter
+      url: https://twitter.com/brent_p
+
+- name: Ryan Layer
+  pic: ryan
+  position: Postdoctoral Research Associate
+  social:
+    - title: github
+      url: https://github.com/ryanlayer
+    - title: twitter
+      url: https://twitter.com/ryanlayer
+
+- name: Jim Havrilla
+  pic: jim
+  position: Graduate Student
+  social:
+    - title: github
+      url: https://github.com/jimhavrilla
+    - title: twitter
+      url: https://twitter.com/jim_havrilla
+
+# Alumni
+alumni:
+- name: Uma Paila
+  pic: uma
+  position: Postdoctoral Scientist
+  social:
+    - title: github
+      url: https://github.com/udp3f
+
+- name: Neil Kindlon
+  pic: neil
+  position: Programmer
+  social:
+    - title: github
+      url: https://github.com/nkindlon    
+
+- name: John Kubinski
+  pic: john
+  position: Undergraduate Researcher
+
+- name: Phanwadee Sinthong
+  pic: gift
+  position: Undergraduate Researcher
+
+
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/aaronquinlan
+  - title: github
+    url: http://github.com/quinlan-lab
+  - title: google
+    url: https://scholar.google.com/citations?user=QwVZZKsAAAAJ&hl=en

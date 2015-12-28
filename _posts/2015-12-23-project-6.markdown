@@ -1,0 +1,14 @@
+---
+title: speedseq
+category: software
+subtitle: ultra-fast personal genome analysis and interpretation
+layout: default
+modal-id: 6
+img: speedseq.overview.png
+thumbnail: speedseq.png
+alt: speedseq.png
+manuscript: http://www.nature.com/nmeth/journal/v12/n10/full/nmeth.3505.html
+code: https://github.com/hall-lab/speedseq
+docs: https://github.com/hall-lab/speedseq
+description: SpeedSeq is an open-source genome analysis platform that accomplishes alignment, variant detection and functional annotation of a 50× human genome in 13 h on a low-cost server and alleviates a bioinformatics bottleneck that typically demands weeks of computation with extensive hands-on expert involvement. SpeedSeq offers performance competitive with or superior to current methods for detecting germline and somatic single-nucleotide variants, structural variants, insertions and deletions, and it includes novel functionality for streamlined interpretation.
+---
