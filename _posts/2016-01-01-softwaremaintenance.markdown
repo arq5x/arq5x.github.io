@@ -1,6 +1,6 @@
 ---
 title: Research software development. A (mine)field of dreams.
-category: blog
+category: draft
 layout: post
 post_author: Aaron Quinlan
 ---
