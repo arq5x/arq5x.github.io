@@ -2,6 +2,7 @@
 title: 2015 Improvements to GEMINI for rare disease research
 category: blog
 layout: post
+comments: true
 post_author: Brent Pedersen
 ---
 I've been in Aaron's lab for about 10 months now. We've made a lot of improvements

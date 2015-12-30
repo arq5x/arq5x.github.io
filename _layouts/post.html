@@ -1,6 +1,5 @@
 ---
 layout: blog_default
-comments: true
 ---
 <section>
   <div class="text-center">
@@ -27,7 +26,11 @@ comments: true
     </div>
   </div>
 
-  {% if post.comments %}
+  {% if page.comments %}
+  <span class="fa-stack fa-4x">
+          <i class="fa fa-circle fa-stack-2x text-secondary"></i>
+          <i class="fa fa-quote-left fa-stack-1x fa-inverse"></i>
+  </span>
   <div id="disqus_thread"></div>
     <script>
     /**
