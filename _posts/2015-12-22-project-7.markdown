@@ -2,7 +2,7 @@
 title: vcfanno
 category: software
 subtitle: A fast, flexible toolset for annotating VCF files.
-layout: default
+layout: blog_default
 modal-id: 7
 img: vcfanno.overview.png
 thumbnail: vcfanno.png

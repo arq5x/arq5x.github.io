@@ -2,7 +2,7 @@
 title: lumpy
 category: software
 subtitle: a probabilistic framework for SV discovery
-layout: default
+layout: blog_default
 modal-id: 2
 img: lumpy.png
 thumbnail: lumpy.overview.png

@@ -2,7 +2,7 @@
 title: gqt
 category: software
 subtitle: Genotype Query Tools
-layout: default
+layout: blog_default
 modal-id: 4
 img: gqt.overview.png
 thumbnail: gqt.png

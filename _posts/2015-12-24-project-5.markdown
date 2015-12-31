@@ -2,7 +2,7 @@
 title: poretools
 category: software
 subtitle: A toolkit for working with nanopore sequencing data from Oxford Nanopore.
-layout: default
+layout: blog_default
 modal-id: 5
 img: poretools.png
 thumbnail: poretools.png

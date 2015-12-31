@@ -307,7 +307,6 @@ header .intro-text .intro-heading {
         margin-bottom: 25px;
         font-family: 'Josefin Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 40px;
-        font-style: italic;
         line-height: 40px;
     }
 
@@ -335,8 +334,7 @@ section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
     font-family: 'Josefin Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 20px;
-    font-style: italic;
+    font-size: 24px;
     font-weight: 400;
 }
 

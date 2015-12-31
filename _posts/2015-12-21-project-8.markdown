@@ -2,7 +2,7 @@
 title: pedagree
 category: software
 subtitle: Detect sample mixups in family based studies of disease.
-layout: default
+layout: blog_default
 modal-id: 8
 img: pedagree.png
 thumbnail: pedagree.png

@@ -2,7 +2,7 @@
 title: bedtools
 category: software
 subtitle: a swiss-army knife for genome intervals
-layout: default
+layout: blog_default
 modal-id: 1
 img: bedtools.overview.png
 thumbnail: bedtools.swiss.png

@@ -2,7 +2,7 @@
 title: speedseq
 category: software
 subtitle: ultra-fast personal genome analysis and interpretation
-layout: default
+layout: blog_default
 modal-id: 6
 img: speedseq.overview.png
 thumbnail: speedseq.png

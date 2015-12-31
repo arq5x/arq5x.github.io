@@ -2,7 +2,7 @@
 title: gemini
 category: software
 subtitle: a flexible framework for exploring genome variation
-layout: default
+layout: blog_default
 modal-id: 3
 img: gemini.overview.png
 thumbnail: gemini.png
