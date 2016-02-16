@@ -25,7 +25,7 @@ We ended up using the GEMINI framework to identify our first new gene underlying
 
 Where are we now?
 -----------------
-Last June, I moved my lab to the University of Utah to be a part of the USTAR Center for Genetic Discovery, along with Mark Yandell, Lynn Jorde and Gabor Marth. I was incredibly fortunate to convince [Brent Pedersen](https://github.com/brentp) to join the lab. Brent has done yeoman's work to overhaul GEMINI to be faster, leaner, and more powerful. Heretofore, however, GEMINI has been strictly limited to build 37 of the human genome. That is, it supports on human research. Worse still, it is constrained to a single build of the human genome. 
+Last June, I moved my lab to the University of Utah to be a part of the USTAR Center for Genetic Discovery, along with Mark Yandell, Lynn Jorde and Gabor Marth. I was incredibly fortunate to convince [Brent Pedersen](https://github.com/brentp) to join the lab. Brent has done yeoman's work to overhaul GEMINI to be faster, leaner, and more powerful. Heretofore, however, GEMINI has been strictly limited to build 37 of the human genome. That is, it solely supports human research. Worse still, it is constrained to a single build of the human genome. 
 
 
 Flexible VCF annotation
