@@ -56,6 +56,14 @@ people:
     - title: twitter
       url: https://twitter.com/jim_havrilla
 
+- name: Tom Sasani
+  pic: sasani
+  position: Graduate Student
+  social:
+    - title: github
+      url: https://github.com/tomsasani
+
+
 # Alumni
 alumni:
 - name: Uma Paila
