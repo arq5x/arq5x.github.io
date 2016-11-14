@@ -47,6 +47,13 @@ people:
     - title: twitter
       url: https://twitter.com/ryanlayer
 
+- name: Meenal Gupta
+  pic: meenal.small
+  position: Postdoctoral Research Associate
+  social:
+    - title: github
+      url: https://github.com/Meenal002
+
 - name: Jim Havrilla
   pic: jim
   position: Graduate Student
