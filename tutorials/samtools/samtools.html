@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Aaron Quinlan" />
+  <meta name="date" content="2013-11-20" />
+  <title>samtools Tutorial</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="template/template.css" type="text/css" />
+</head>
+<body>
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">samtools Tutorial</span>
+        <ul class="nav pull-right doc-info">
+                    <li><p class="navbar-text">Aaron Quinlan</p></li>
+                              <li><p class="navbar-text">November 20, 2013</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div id="TOC" class="span3">
+        <div class="well toc">
+        <ul>
+          <li class="nav-header">Table of Contents</li>
+        </ul>
+        <ul>
+        <li><a href="#synopsis">Synopsis</a></li>
+        <li><a href="#installing-samtools">Installing samtools</a></li>
+        <li><a href="#setup">Setup</a></li>
+        <li><a href="#the-samtools-help">The samtools help</a></li>
+        <li><a href="#converting-sam-to-bam-with-samtools-view">Converting SAM to BAM with samtools “view”</a></li>
+        <li><a href="#samtools-sort">samtools “sort”</a></li>
+        <li><a href="#samtools-index">samtools “index”</a></li>
+        <li><a href="#samtools-view">samtools “view”</a><ul>
+        <li><a href="#scrutinize-some-alignments">Scrutinize some alignments</a></li>
+        <li><a href="#lets-make-the-flag-more-readable">Let’s make the FLAG more readable</a></li>
+        <li><a href="#count-the-total-number-of-alignments.">Count the total number of alignments.</a></li>
+        <li><a href="#inspect-the-header.">Inspect the header.</a></li>
+        <li><a href="#capture-the-flag.">Capture the FLAG.</a></li>
+        </ul></li>
+        <li><a href="#other-options.">Other options.</a></li>
+        </ul>
+        </div>
+      </div>
+            <div class="span9">
+            <h1 id="synopsis">Synopsis</h1>
+<p>Our goal is to work through examples that demonstrate how to explore, process and manipulate SAM and BAM files with the <code>samtools</code> software package.</p>
+<p>For future reference, use the samtools <a href="http://www.htslib.org/doc/">documentation</a>.</p>
+<p><br /></p>
+<h1 id="installing-samtools">Installing samtools</h1>
+<p>Follow these steps:</p>
+<pre><code>cd ~
+# optional. you may already have a src directory
+mkdir src
+cd ~/src
+git clone https://github.com/samtools/samtools
+cd samtools
+make
+cp samtools ~/bin</code></pre>
+<h1 id="setup">Setup</h1>
+<p>Create a new directory from your home directory called “samtools-demo”.</p>
+<pre><code>cd ~
+mkdir samtools-demo</code></pre>
+<p>Navigate into that directory.</p>
+<pre><code>cd samtools-demo</code></pre>
+<p>Download the example gzipped SAM file I have provided.</p>
+<pre><code>curl https://s3.amazonaws.com/samtools-tutorial/sample.sam.gz &gt; sample.sam.gz
+gzip -d sample.sam.gz</code></pre>
+<h1 id="the-samtools-help">The samtools help</h1>
+<p>To bring up the help, just type</p>
+<pre><code>samtools</code></pre>
+<p>As you can see, there are multiple “subcommands” and for samtools to work you must tell it which subcommand you want to use. Examples:</p>
+<pre><code>samtools view
+samtools sort
+samtools depth</code></pre>
+<h1 id="converting-sam-to-bam-with-samtools-view">Converting SAM to BAM with samtools “view”</h1>
+<p>To do anything meaningful with alignment data from BWA or other aligners (which produce text-based SAM output), we need to first convert the SAM to its binary counterpart, BAM format. The binary format is much easier for computer programs to work with. However, it is consequently very difficult for humans to read. More on that later.</p>
+<p>To convert SAM to BAM, we use the <code>samtools view</code> command. We must specify that our input is in SAM format (by default it expects BAM) using the -S option. We must also say that we want the output to be BAM (by default it produces BAM) with the -b option. Samtools follows the UNIX convention of sending its output to the UNIX STDOUT, so we need to use a redirect operator (“&gt;”) to create a BAM file from the output.</p>
+<pre><code>samtools view -S -b sample.sam &gt; sample.bam</code></pre>
+<p>Now, we can use the samtools view command to convert the BAM to SAM so we mere mortals can read it.</p>
+<pre><code>samtools view sample.bam | head</code></pre>
+<h1 id="samtools-sort">samtools “sort”</h1>
+<p>When you align FASTQ files with all current sequence aligners, the alignments produced are in random order with respect to their position in the reference genome. In other words, the BAM file is in the order that the sequences occurred in the input FASTQ files.</p>
+<pre><code>samtools view sample.bam | head</code></pre>
+<p>Doing anything meaningful such as calling variants or visualizing alignments in IGV) requires that the BAM is further manipulated. It must be sorted such that the alignments occur in “genome order”. That is, ordered positionally based upon their alignment coordinates on each chromosome.</p>
+<pre><code>samtools sort sample.bam -o sample.sorted.bam</code></pre>
+<p>Now let’s check the order:</p>
+<pre><code>samtools view sample.sorted.bam | head</code></pre>
+<p>Notice anything different about the coordinates of the alignments?</p>
+<p><br /></p>
+<h1 id="samtools-index">samtools “index”</h1>
+<p>Indexing a genome sorted BAM file allows one to quickly extract alignments overlapping particular genomic regions. Moreover, indexing is required by genome viewers such as IGV so that the viewers can quickly display alignments in each genomic region to which you navigate.</p>
+<pre><code>samtools index sample.sorted.bam</code></pre>
+<p>This will create an additional “index” file. List (<code>ls</code>) the contents of the current directory and look for the new index file.</p>
+<pre><code>ls </code></pre>
+<p>Now, let’s exploit the index to extract alignments from the 33rd megabase of chromosome 1. To do this, we use the samtools <code>view</code> command, which we will give proper treatment in the next section. For now, just do it without understanding. No really. Do it.</p>
+<pre><code>samtools view sample.sorted.bam 1:33000000-34000000</code></pre>
+<p>How many alignments are there in this region?</p>
+<pre><code>samtools view sample.sorted.bam 1:33000000-34000000 | wc -l</code></pre>
+<p><br /></p>
+<h1 id="samtools-view">samtools “view”</h1>
+<p>The samtools <code>view</code> command is the most versatile tool in the samtools package. It’s main function, not surprisingly, is to allow you to convert the binary (i.e., easy for the computer to read and process) alignments in the BAM file view to text-based SAM alignments that are easy for <em>humans</em> to read and process.</p>
+<h2 id="scrutinize-some-alignments">Scrutinize some alignments</h2>
+<p>Let us start by inspecting the first five alignments in our BAM in detail.</p>
+<pre><code>samtools view sample.sorted.bam | head -n 5</code></pre>
+<h2 id="lets-make-the-flag-more-readable">Let’s make the FLAG more readable</h2>
+<p>Let us start by inspecting the first five alignments in our BAM in detail.</p>
+<pre><code>samtools view -X sample.sorted.bam | head -n 5</code></pre>
+<p>You can use the detailed help to get a better sense of what each character in the human “readable” FLAG means. See section 6 of the Notes.</p>
+<pre><code>samtools view -?</code></pre>
+<h2 id="count-the-total-number-of-alignments.">Count the total number of alignments.</h2>
+<pre><code>samtools view sample.sorted.bam | wc -l</code></pre>
+<h2 id="inspect-the-header.">Inspect the header.</h2>
+<p>The “header” in a BAM file records important information regarding the reference genome to which the reads were aligned, as well as other information about how the BAM has been processed. One can ask the <code>view</code> command to report solely the header by using the <code>-H</code> option.</p>
+<pre><code>samtools view -H sample.sorted.bam</code></pre>
+<h2 id="capture-the-flag.">Capture the FLAG.</h2>
+<p>As we discussed earlier, the FLAG field in the BAM format encodes several key pieces of information regarding how an alignment aligned to the reference genome. We can exploit this information to isolate specific types of alignments that we want to use in our analysis.</p>
+<p>For example, we often want to call variants solely from paired-end sequences that aligned “properly” to the reference genome. Why?</p>
+<p>To ask the <code>view</code> command to report solely “proper pairs” we use the <code>-f</code> option and ask for alignments where the second bit is true (proper pair is true).</p>
+<pre><code>samtools view -f 0x2 sample.sorted.bam</code></pre>
+<p>How many <em>properly</em> paired alignments are there?</p>
+<pre><code>samtools view -f 0x2 sample.sorted.bam | wc -l</code></pre>
+<p>Now, let’s ask for alignments that are NOT properly paired. To do this, we use the <code>-F</code> option (note the capitalization to denote “opposite”).</p>
+<pre><code>samtools view -F 0x2 sample.sorted.bam</code></pre>
+<p>How many <em>improperly</em> paired alignments are there?</p>
+<pre><code>samtools view -F 0x2 sample.sorted.bam | wc -l</code></pre>
+<p>Does everything add up?</p>
+<h1 id="other-options.">Other options.</h1>
+<p>There are many other options for the <code>view</code> command. This is merely meant to be an appetizer. Please look through the help, as well as visit the samtools <a href="http://www.htslib.org/doc/">documentation</a> site.</p>
+            </div>
+    </div>
+  </div>
+</body>
+</html>
