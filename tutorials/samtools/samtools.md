@@ -24,6 +24,7 @@ Follow these steps:
     # optional. you may already have a src directory
     mkdir src
     cd ~/src
+    git clone https://github.com/samtools/htslib
     git clone https://github.com/samtools/samtools
     cd samtools
     make
