@@ -1,14 +1,14 @@
 ---
-title: pedagree
+title: peddy
 category: software
 subtitle: Detect sample mixups in family based studies of disease.
 layout: blog_default
 modal-id: 8
-img: pedagree.png
-thumbnail: pedagree.png
-alt: pedagree.png
-manuscript: https://github.com/brentp/pedagree
-code: https://github.com/brentp/pedagree
-docs: https://github.com/brentp/pedagree
+img: peddy.png
+thumbnail: peddy.png
+alt: peddy.png
+manuscript: http://www.cell.com/ajhg/fulltext/S0002-9297(17)30017-4
+code: https://github.com/brentp/peddy
+docs: https://github.com/brentp/peddy
 description: pedagree is a python library for querying, QC'ing, and manipulating pedigree files.
 ---
