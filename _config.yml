@@ -70,6 +70,12 @@ people:
     - title: github
       url: https://github.com/tomsasani
 
+- name: Nathan Wilkinson
+  pic: wilkinson
+  position: Undergraduate Student
+  social:
+    - title: github
+      url: https://github.com/
 
 # Alumni
 alumni:
