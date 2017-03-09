@@ -70,6 +70,20 @@ people:
     - title: github
       url: https://github.com/tomsasani
 
+- name: Stephanie Kravitz
+  pic: kravitz
+  position: Graduate Student
+  social:
+    - title: github
+      url: https://github.com/snkravitz
+
+- name: Johnathan Belyeu
+  pic: belyeu
+  position: Graduate Student
+  social:
+    - title: github
+      url: https://github.com/jbelyeu
+
 - name: Nathan Wilkinson
   pic: wilkinson
   position: Undergraduate Student
