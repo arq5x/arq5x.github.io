@@ -1,0 +1,14 @@
+---
+title: indexcov
+category: software
+subtitle: indexcov - crazy fast genome coverage estimates
+layout: blog_default
+modal-id: 9
+img: indexcov.png
+thumbnail: indexcov.png
+alt: indexcov.png
+manuscript: http://www.biorxiv.org/content/early/2017/06/09/148296
+code: https://github.com/brentp/goleft/tree/master/indexcov
+docs: https://github.com/brentp/goleft/tree/master/indexcov
+description: Crazy fast genome coverage estimates! The BAM and CRAM formats provide a supplementary linear index that facilitates rapid access to sequence alignments in arbitrary genomic regions. Comparing consecutive entries in a BAM or CRAM index allows one to infer the number of alignment records per genomic region for use as an effective proxy of sequence depth in each genomic region. Based on these properties, we have developed indexcov, an efficient estimator of whole-genome sequencing coverage to rapidly identify samples with aberrant coverage profiles, reveal large scale chromosomal anomalies, recognize potential batch effects, and infer the sex of a sample.
+---
