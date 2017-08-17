@@ -61,6 +61,13 @@ people:
     - title: twitter
       url: https://twitter.com/FakeDrTom
 
+- name: Hao Hou
+  pic: hao
+  position: Programmer / Staff Scientist
+  social:
+    - title: github
+      url: https://github.com/38
+
 - name: Jim Havrilla
   pic: jim
   position: Graduate Student
