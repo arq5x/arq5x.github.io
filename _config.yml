@@ -54,6 +54,13 @@ people:
     - title: github
       url: https://github.com/Meenal002
 
+- name: Tom Nicholas
+  pic: nicholas
+  position: Senior Research Associate
+  social:
+    - title: twitter
+      url: https://twitter.com/FakeDrTom
+
 - name: Jim Havrilla
   pic: jim
   position: Graduate Student
