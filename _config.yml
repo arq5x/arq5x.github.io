@@ -54,6 +54,13 @@ people:
     - title: github
       url: https://github.com/Meenal002
 
+- name: Brian Lohman
+  pic: lohman.small
+  position: Postdoctoral Research Associate
+  social:
+    - title: github
+      url: https://github.com/BrianLohman
+
 - name: Tom Nicholas
   pic: nicholas
   position: Senior Research Associate
