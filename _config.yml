@@ -61,12 +61,26 @@ people:
     - title: github
       url: https://github.com/BrianLohman
 
+- name: Amelia Wallace
+  pic: wallace.small
+  position: Postdoctoral Research Associate
+  social:
+    - title: github
+      url: https://github.com/adw22
+
 - name: Tom Nicholas
   pic: nicholas
-  position: Senior Research Associate
+  position: Sr. Research Associate
   social:
     - title: twitter
       url: https://twitter.com/FakeDrTom
+
+- name: Peter McHale
+  pic: mchale.small
+  position: Sr. Analyst/Programmer
+  social:
+    - title: github
+      url: https://github.com/petermchale
 
 - name: Hao Hou
   pic: hao
@@ -87,6 +101,16 @@ people:
 - name: Tom Sasani
   pic: sasani
   position: Graduate Student
+  bio: 
+  > 
+    Currently, my research is focused on understanding the landscape 
+    of de novo mutation in the human genome. Using deep sequencing data 
+    from large, multi-generational pedigrees, I am developing an accurate 
+    estimate of the human mutation rate, and assessing the influence of 
+    relevant molecular processes (recombination, DNA replication, etc.) 
+    on this rate. Previously, as part of a collaboration with Nels Elde’s 
+    lab, I used the Oxford Nanopore sequencing platform to investigate 
+    adaptive structural variation in evolving poxvirus genomes.
   social:
     - title: github
       url: https://github.com/tomsasani
@@ -107,12 +131,7 @@ people:
     - title: github
       url: https://github.com/jbelyeu
 
-- name: Nathan Wilkinson
-  pic: wilkinson
-  position: Undergraduate Student
-  social:
-    - title: github
-      url: https://github.com/nathanwilk7
+
 
 # Alumni
 alumni:
@@ -138,6 +157,12 @@ alumni:
   pic: gift
   position: Undergraduate Researcher
 
+- name: Nathan Wilkinson
+  pic: wilkinson
+  position: Undergraduate Student
+  social:
+    - title: github
+      url: https://github.com/nathanwilk7
 
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
