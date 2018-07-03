@@ -712,4 +712,4 @@ that are NOT exonic.
 10. Which hESC ChromHMM state (e.g., 11_Weak_Txn, 10_Txn_Elongation) represents the most number of base pairs in the genome? (Hint: you will need to use `awk` or `perl` here, as well as the [groupby](http://bedtools.readthedocs.org/en/latest/content/tools/groupby.html) tool.)
 
 
-[answers](http://www.quinlanlab.org/tutorials/bedtools/answers.html)
+[answers]()
