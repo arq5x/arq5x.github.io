@@ -1,0 +1,97 @@
+---
+title: A map of constrained coding regions (CCRs) in the human genome. 
+category: blog
+layout: post
+comments: true
+post_author: Aaron Quinlan
+---
+
+> **The unseen enemy is always the most fearsome.**
+>
+> - George R.R. Martin, *A Clash of Kings*
+
+
+> **Once in a while you get shown the light  
+In the strangest of places if you look at it right.**  
+> - Jerry Garcia and Robert Hunter, *Scarlet Begonias*
+
+>
+
+CCR Resources
+=============
+- [Documentation](https://quinlan-lab.github.io/ccr/)
+- [Autosomal Constrained Coding Regions in BED format](https://s3.us-east-2.amazonaws.com/ccrs/ccrs/ccrs.autosomes.v2.20180420.bed.gz)
+- [X Chromosome Constrained Coding Regions in BED format](https://s3.us-east-2.amazonaws.com/ccrs/ccrs/ccrs.xchrom.v2.20180420.bed.gz)
+- [Autosomal CCRs >=90th percentile in BED format](https://s3.us-east-2.amazonaws.com/ccrs/ccrs/ccrs.autosomes.90orhigher.v2.20180420.bed.gz)
+- [X Chromosome CCRs >=90th percentile in BED format](https://s3.us-east-2.amazonaws.com/ccrs/ccrs/ccrs.xchrom.90orhigher.v2.20180420.bed.gz)
+- [The CCR browser](https://s3.us-east-2.amazonaws.com/ccrs/ccr.html) built using IGV.js
+
+>
+
+Background
+==========
+
+Sometime in late 2010, as I was preparing to start my very own research group (!), I saw a talk describing the [NHLBI Exome Sequencing Project's](https://esp.gs.washington.edu/drupal/) goal to sequence ~6,000 human exomes. It quickly dawned on me (and likely many others) that we might be able to leverage the variation observed in these exomes to infer coding regions that are under purifying selection from the *absence* of variation in these samples. Multiple fun discussions with the brilliant [Bill Pearson](http://www.people.virginia.edu/~wrp/) helped to focus the research.
+
+**Fast forward EIGHT years**. The initial kernel of an idea catalyzed the creation of the [map of constrained coding regions](https://www.nature.com/articles/s41588-018-0294-6.epdf?author_access_token=N8RkVYcavtplcSSE2KJkNdRgN0jAjWel9jnR3ZoTv0OG-o3UTB17cpoBs8B6XMBCl-5E0ZvpOii0iPl_hRSMGjWfkG4em7gjy95eV4bkTb0AF-E_dj3obeJfaadTja3aj9hUh1xk_BIztWgJScFx8w%3D%3D) that we published in Nature Genetics. This work was led by [Jim Havrilla](https://twitter.com/jim_havrilla), with clever ideas, slick code, and advice throughout from [Brent Pedersen](https://twitter.com/brent_p) and [Ryan Layer](https://twitter.com/ryanlayer).
+
+As we describe in the manuscript's introduction, this idea leverages the concept of [survival bias](https://en.wikipedia.org/wiki/Survivorship_bias), which is most famously exemplified by the work of Abraham Wald and the Statistical Research Group (SRG) during WWII. Here's the scenario.  Allied planes are being shot down left and right and the top brass obviously wants to slow this down. Metal is scarce; moreover, while adding metal further protects the plane, it also makes it less maneuverable and less fuel efficient. This is a classic optimization problem - how could they use the least amount of metal while maximizing defenses? The story goes that the SRG was presented with data describing the bullet hole patterns observed from hundreds of planes that returned from their sorties (for example, the hypothetical figure that I borrowed from Wikipedia below).
+
+![Image of Yaktocat](https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Survivorship-bias.png/640px-Survivorship-bias.png)
+
+The top brass are said to have interpreted this data to imply that armor should be placed where the bullet holes are the densest (this is where we are being shot!). **Wald famously disagreed. He realized that the observed data were biased by the fact that they come solely from the planes that *returned* (survived).** He reasoned that armor should instead be placed where the bullets are *not*, as these regions are likely where the shot down planes had taken damage; that is, **constrained flying regions**.
+
+Similarly, we used survival bias to identify constrained (i.e., under strong purifying selection) coding regions (CCRs) in the human genome from the *absence* of protein-changing variation among >120,000 of human exomes.
+
+I like analogies. A lot. So, here is a video describing another based upon rainfall on a sidewalk.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KGJYfw_V0wo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+>
+
+Gratitude
+=========
+Let us be clear; we are proud [research parasites](http://researchparasite.com/). This study would have been impossible without the truly heroic efforts of the team behind the [Genome Aggregation Database](http://gnomad.broadinstitute.org), and its predecessor, the [Exome Aggregation Database](http://gnomad.broadinstitute.org). We are incredibly grateful to [Daniel MacArthur](https://twitter.com/dgmacarthur), [Konrad Karczewski](https://twitter.com/konradjk), [Monkol Lek](https://twitter.com/theFourier2k) and the rest of the team. **Assembling this resource has been invaluable to human genetics. Thank you.**
+
+
+>
+
+Brief Summary
+=============
+As detailed in the manuscript, we identified constrained coding regions as segments of protein-coding genes that lack even a single protein-altering variant among the >120,000 exomes in gnomAD. Whereas the average density of such variation in gnomAD is approximately 1 in 6 coding bases, the most constrained coding regions (e.g., at or above the 99th percentile) **often lack protein-altering variants for more than  100 bases**. For example, the red regions below reflect CCRs we identified at the 95th percentile and higher in *KCNQ2* and *TNNT2*.
+
+![Fig1](https://images.readcube-cdn.com/publishers/nature/figures/a088277ecf9b0a14920c7935ca2a690c3a216096dce064ce7de9481c828b5ae0/1.jpg)
+
+>
+
+Key Results
+=============
+As a positive control, the manuscript demonstrates that, not surprisingly, the most constrained coding regions are enriched for pathogenic variants in [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) that are known to underlie rare human disease phenotypes.
+
+Similarly, we find that CCRs complement other variant prioritization tools for the interpretation of *de novo* mutation in the context of rare disease.  
+
+In fact, while it didn't make it into the manuscript, **almost all of the pathogenic mutations we identified in our [recent study](https://www.ncbi.nlm.nih.gov/pubmed/30109124) of early infantile epileptic encephalopathy lie within CCRs at or above the 95th (and most above the 99th) percentile.**
+
+Another fun result is the identification of a subset of protein domain families that harbor the greatest constraint: from a high level, these domains typically interact with DNA or chromatin.
+
+>
+
+New Disease Genes?
+==================
+Given the enrichment of high CCRs for known pathogenic variants, the result we are most excited by is the fact that many highly (>99%) constrained regions lie within genes lacking prior disease association. Certainly some of these are false positives. **However, we hypothesize that some of these regions reflect strong purifying selection and when mutated, they lead to developmental phenotypes are even embryonic lethality.**
+
+We are excited to explore these regions in future studies and hope the map of constrained coding regions will help to guide future research in the community and empower mutation interpretation in rare disease studies. We are excited to see that this is indeed already happening (see [Jensen et al](https://www.biorxiv.org/content/biorxiv/early/2018/11/02/459958.full.pdf), [Wray et al](https://www.sciencedirect.com/science/article/pii/S0092867418307141), and [Boukas et al](https://www.biorxiv.org/content/early/2018/05/07/219097))!
+
+>
+
+Caveats
+=======
+The beauty of the approach is that it is very simple. However, it is intentionally very strict, as we wanted to minimize false positive predictions. Admittedly, "breaking" constrained regions based upon the presence of a single protein-altering variant in gnomAD may lead to false negatives - that is, larger regions of constraint disrupted by a single variant. We emphasize that the map we have created models constraint under a dominant model and is not well-suited to recessive constraint. Finally, as powerful as gnomAD is, it is primarily comprised of variation from individuals of European ancestry. As such, it is unclear to what degree our map properly models constrained regions in other ancestries. 
+
+>
+
+The future
+===========
+What next?  In the next couple of years, a truly massive number of human genomes will be sequenced. Furthermore, thanks to gnomAD and other efforts, there is an exciting commitment to data sharing in human genomics. Therefore, our hope is that this research, as well as [similar ideas](https://www.biorxiv.org/content/early/2017/06/12/148353) from [Kaitlyn Samocha](https://twitter.com/ksamocha), launches new approaches to isolating the critical regions of our genome. In principle, variation from many more human genomes will increase the resolution and accuracy of regions predicted to be under strong purifying selection. Similarly, we are rapidly approaching datasets including genome-wide variation from >100,000 genomes thanks to [gnomAD]((http://gnomad.broadinstitute.org)), [Genomics England](https://www.genomicsengland.co.uk/), [TopMED](https://www.nhlbiwgs.org/), and the [Centers for Common Disease Genomics](https://www.genome.gov/27563570/centers-for-common-disease-genomics-ccdg/). These datasets hold the intriguing promise of modeling human constraint to non-coding regions of our genome. We look forward to the new approaches that arise and are eager to continue our research in this area. Stay tuned.
+
