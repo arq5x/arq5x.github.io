@@ -41,9 +41,9 @@ Background
 
 Sometime in late 2010, as I was nervously preparing to start my own research group (!), I saw a talk describing the [NHLBI Exome Sequencing Project's](https://esp.gs.washington.edu/drupal/) goal to sequence ~6,000 human exomes. It quickly dawned on me (and likely many others) that we could leverage the variation found in these exomes to infer coding regions that are under purifying selection from the *absence* of variation in these samples. Multiple fun discussions with the brilliant [Bill Pearson](http://www.people.virginia.edu/~wrp/) helped to focus the research. Soon after, [Jim Havrilla](https://twitter.com/jim_havrilla) joined my lab and quickly latched on to this idea for his doctoral thesis. 
 
-**Fast forward EIGHT years**. The initial kernel of an idea catalyzed the creation of the [map of constrained coding regions](https://www.nature.com/articles/s41588-018-0294-6.epdf?author_access_token=N8RkVYcavtplcSSE2KJkNdRgN0jAjWel9jnR3ZoTv0OG-o3UTB17cpoBs8B6XMBCl-5E0ZvpOii0iPl_hRSMGjWfkG4em7gjy95eV4bkTb0AF-E_dj3obeJfaadTja3aj9hUh1xk_BIztWgJScFx8w%3D%3D) that we published in Nature Genetics. This work was led throughout by Jim Havrilla, but benefited from clever ideas, slick code, and advice throughout from [Brent Pedersen](https://twitter.com/brent_p) and [Ryan Layer](https://twitter.com/ryanlayer).
+**Fast forward EIGHT years**. The initial kernel of an idea catalyzed the creation of the [map of constrained coding regions](https://www.nature.com/articles/s41588-018-0294-6.epdf?author_access_token=N8RkVYcavtplcSSE2KJkNdRgN0jAjWel9jnR3ZoTv0OG-o3UTB17cpoBs8B6XMBCl-5E0ZvpOii0iPl_hRSMGjWfkG4em7gjy95eV4bkTb0AF-E_dj3obeJfaadTja3aj9hUh1xk_BIztWgJScFx8w%3D%3D) that we published in Nature Genetics. This work was led throughout by Jim Havrilla, but benefited from clever ideas, slick code, and advice from [Brent Pedersen](https://twitter.com/brent_p) and [Ryan Layer](https://twitter.com/ryanlayer).
 
-As we describe in the manuscript's introduction, this idea is based upon the concept of [survival bias](https://en.wikipedia.org/wiki/Survivorship_bias), which is most famously demonstrated in the work of Abraham Wald and the Statistical Research Group (SRG) during WWII. Here's the scenario.  Allied planes are being shot down left and right and the military leadership obviously wants to slow this down. Metal is scarce; moreover, while adding metal further protects the plane, it also makes it less maneuverable and less fuel efficient. This is a classic optimization problem - how could they use the least amount of metal while maximizing defenses? The story goes that the SRG was presented with data describing the bullet hole patterns observed from hundreds of planes that returned from their sorties (for example, the hypothetical figure that I borrowed from Wikipedia below).
+As we describe in the manuscript's introduction, this idea is based upon the concept of [survival bias](https://en.wikipedia.org/wiki/Survivorship_bias), which is pervasive in science and is most famously demonstrated in the work of Abraham Wald and the Statistical Research Group (SRG) during WWII. Here's the scenario. Allied planes are being shot down left and right and military leadership obviously wants to slow this down. However, metal is scarce. Moreover, while adding metal further protects the plane, it also makes it less maneuverable and less fuel efficient. This is a classic optimization problem - how could they use the least amount of metal while maximizing defenses? The story goes that the SRG was presented with data describing the bullet hole patterns observed from hundreds of planes that returned from their sorties (for example, the hypothetical figure that I borrowed from Wikipedia below).
 
 ![survivorship](https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Survivorship-bias.png/640px-Survivorship-bias.png)
 
@@ -65,7 +65,7 @@ I like analogies. A lot. So, here is a video describing another based upon rainf
 
 >
 
-This second analogy led to the concept for the cover of the current issue of Nature Genetics!
+The analogy of unexpected patterns of constraint being revealed by thousands of raindrops (genetic variants)  led to the concept for the cover of the current issue of Nature Genetics!
 
 >
 
@@ -85,7 +85,7 @@ Key Results
 =============
 As a positive control, the manuscript demonstrates that, not surprisingly, the most constrained coding regions are enriched for pathogenic variants in [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) that are known to underlie rare human disease phenotypes.
 
-Similarly, we find that CCRs complement other variant prioritization tools for the interpretation of *de novo* mutation in the context of rare disease. We argue that de novo mutations lying within the most constrained (e.g., 99th percentile and higher) coding regions are likely to be involved in developmental phenotypes. In fact, while it didn't make it into the manuscript, **almost all of the pathogenic mutations we identified in our [recent study](https://www.ncbi.nlm.nih.gov/pubmed/30109124) of early infantile epileptic encephalopathy lie within CCRs at or above the 95th (and most above the 99th) percentile.**
+Similarly, we find that CCRs complement other variant prioritization tools for the interpretation of *de novo* mutation in the context of rare disease. We argue that *de novo* mutations lying within the most constrained (e.g., 99th percentile and higher) coding regions are likely to be involved in developmental phenotypes. In fact, while it didn't make it into the manuscript, **almost all of the pathogenic mutations we identified in our [recent study](https://www.ncbi.nlm.nih.gov/pubmed/30109124) of early infantile epileptic encephalopathy lie within CCRs at or above the 95th (and most above the 99th) percentile.**
 
 An important caveat, however, is that mutations lying within less constrained regions are not necessarily unrelated to the phenotype.  
 
@@ -104,7 +104,7 @@ We are excited to explore these regions in future studies and hope the map of co
 
 Caveats
 =======
-The elegance of the approach we have take to identify constrained coding regions (CCRs) is that it is very simple. However, it is intentionally very strict, as we wanted to minimize false positive predictions. Admittedly, "breaking" constrained regions based upon the presence of a single protein-altering variant in gnomAD may lead to false negatives - that is, larger regions of constraint disrupted by a single variant. We emphasize that the map we have created models constraint under a dominant model and is not well-suited to recessive constraint. Finally, as powerful as gnomAD is, it is primarily comprised of variation from individuals of European ancestry. As such, it is unclear to what degree our map properly models constrained regions in other ancestries. 
+The elegance of our approachto identify constrained coding regions (CCRs) is that it is very simple. However, it is intentionally very strict, as we wanted to minimize false positive predictions. Admittedly, "breaking" constrained regions based upon the presence of a single protein-altering variant in gnomAD may lead to false negatives; that is, larger regions of constraint disrupted by a single variant. We emphasize that the map we have created reveals constrained regions under a dominant model, and is not well-suited to recessive constraint. Finally, as powerful as gnomAD is, it is primarily comprised of variation from individuals of European ancestry. As such, it is unclear to what degree our map properly models constrained regions in other ancestries. 
 
 >
 
