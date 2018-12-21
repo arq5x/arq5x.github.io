@@ -74,7 +74,7 @@ As detailed in the manuscript, we identified constrained coding regions as segme
 
 >
 
-<img width="800" src="https://images.readcube-cdn.com/publishers/nature/figures/a088277ecf9b0a14920c7935ca2a690c3a216096dce064ce7de9481c828b5ae0/1.jpg">
+<img width="640" src="https://images.readcube-cdn.com/publishers/nature/figures/a088277ecf9b0a14920c7935ca2a690c3a216096dce064ce7de9481c828b5ae0/1.jpg">
 
 >
 
