@@ -83,7 +83,11 @@ As detailed in the manuscript, we identified constrained coding regions as segme
 
 As a positive control, we demonstrate that, the most constrained coding regions are enriched for pathogenic variants in [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) that are known to underlie rare human disease phenotypes. For example, one of the most constrained regions is a 274 coding base pair region devoid of protein-altering variation in *SCN8A*. The 4 exons comprising this CCR encode the bulk of the ion transport domain. Below is a screen shot from our [CCR browser](https://s3.us-east-2.amazonaws.com/ccrs/ccr.html) built using [IGV.js](https://github.com/igvteam/igv.js/wiki). The image is a bit difficult to make out, so can view the region directly with [this link](https://s3.us-east-2.amazonaws.com/ccrs/ccr.html#12:52,179,723-52,189,901). Dark red regions reflect CCRs at or above the 99th percentile.
 
+>
+
 ![scn8a](/img/blog/scn8a.png){: .img-responsive }
+
+>
 
 Similarly, we find that CCRs complement other variant prioritization tools for the interpretation of *de novo* mutation in the context of rare disease. We argue that *de novo* mutations lying within the most constrained (e.g., 99th percentile and higher) coding regions are likely to be involved in developmental phenotypes. In fact, while it didn't make it into the manuscript, **almost all of the pathogenic mutations we identified in our [recent study](https://www.ncbi.nlm.nih.gov/pubmed/30109124) of early infantile epileptic encephalopathy lie within CCRs at or above the 95th (and most above the 99th) percentile.**
 
