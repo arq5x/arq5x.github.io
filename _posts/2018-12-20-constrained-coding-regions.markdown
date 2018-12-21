@@ -70,6 +70,9 @@ The analogy of unexpected patterns of constraint being revealed by thousands of 
 
 >
 
+Key Results
+=============
+
 As detailed in the manuscript, we identified constrained coding regions as segments of protein-coding genes that lack even a single protein-altering variant among the >120,000 exomes in [Genome Aggregation Database](http://gnomad.broadinstitute.org) (gnomAD). Whereas the average density of such variation in gnomAD is approximately 1 in 7 coding bases, the most constrained coding regions (e.g., at or above the 99th percentile) **often lack protein-altering variants for more than  100 bases**. For example, the red regions below reflect CCRs we identified at the 95th percentile and higher in *KCNQ2* and *TNNT2*.
 
 >
@@ -78,9 +81,9 @@ As detailed in the manuscript, we identified constrained coding regions as segme
 
 >
 
-Key Results
-=============
-As a positive control, the manuscript demonstrates that,  unsurprisingly, the most constrained coding regions are enriched for pathogenic variants in [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) that are known to underlie rare human disease phenotypes.
+As a positive control, we demonstrate that, the most constrained coding regions are enriched for pathogenic variants in [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) that are known to underlie rare human disease phenotypes. For example, one of the most constrained regions is a 274 coding base pair region devoid of protein-altering variation in *SCN8A*. The 4 exons comprising this CCR encode the bulk of the ion transport domain. Below is a screen shot from our [CCR browser](https://s3.us-east-2.amazonaws.com/ccrs/ccr.html) built using IGV.js). The image is a bit difficult to make out, so can view the region directly with [this link](https://s3.us-east-2.amazonaws.com/ccrs/ccr.html#12:52,179,723-52,189,901). Dark red regions reflect CCRs at or above the 99th percentile.
+
+![scn8a](/img/blog/scn8a.png){: .img-responsive }
 
 Similarly, we find that CCRs complement other variant prioritization tools for the interpretation of *de novo* mutation in the context of rare disease. We argue that *de novo* mutations lying within the most constrained (e.g., 99th percentile and higher) coding regions are likely to be involved in developmental phenotypes. In fact, while it didn't make it into the manuscript, **almost all of the pathogenic mutations we identified in our [recent study](https://www.ncbi.nlm.nih.gov/pubmed/30109124) of early infantile epileptic encephalopathy lie within CCRs at or above the 95th (and most above the 99th) percentile.**
 
@@ -122,7 +125,7 @@ We are proud [research parasites](http://researchparasite.com/). This study woul
 Constrained Coding Region (CCR) Resources
 ==========================================
 - [Documentation](https://quinlan-lab.github.io/ccr/)
-- [The CCR browser](https://s3.us-east-2.amazonaws.com/ccrs/ccr.html) built using IGV.js
+- [The CCR browser](https://s3.us-east-2.amazonaws.com/ccrs/ccr.html) built using IGV.js)
 - [Autosomal Constrained Coding Regions in BED format](https://s3.us-east-2.amazonaws.com/ccrs/ccrs/ccrs.autosomes.v2.20180420.bed.gz)
 - [X Chromosome Constrained Coding Regions in BED format](https://s3.us-east-2.amazonaws.com/ccrs/ccrs/ccrs.xchrom.v2.20180420.bed.gz)
 - [Autosomal CCRs >=90th percentile in BED format](https://s3.us-east-2.amazonaws.com/ccrs/ccrs/ccrs.autosomes.90orhigher.v2.20180420.bed.gz)
