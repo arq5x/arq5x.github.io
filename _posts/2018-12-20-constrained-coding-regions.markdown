@@ -81,7 +81,7 @@ As detailed in the manuscript, we identified constrained coding regions as segme
 
 >
 
-As a positive control, we demonstrate that, the most constrained coding regions are enriched for pathogenic variants in [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) that are known to underlie rare human disease phenotypes. For example, one of the most constrained regions is a 274 coding base pair region devoid of protein-altering variation in *SCN8A*. The 4 exons comprising this CCR encode the bulk of the ion transport domain. Below is a screen shot from our [CCR browser](https://s3.us-east-2.amazonaws.com/ccrs/ccr.html) built using IGV.js. The image is a bit difficult to make out, so can view the region directly with [this link](https://s3.us-east-2.amazonaws.com/ccrs/ccr.html#12:52,179,723-52,189,901). Dark red regions reflect CCRs at or above the 99th percentile.
+As a positive control, we demonstrate that, the most constrained coding regions are enriched for pathogenic variants in [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) that are known to underlie rare human disease phenotypes. For example, one of the most constrained regions is a 274 coding base pair region devoid of protein-altering variation in *SCN8A*. The 4 exons comprising this CCR encode the bulk of the ion transport domain. Below is a screen shot from our [CCR browser](https://s3.us-east-2.amazonaws.com/ccrs/ccr.html) built using [IGV.js](https://github.com/igvteam/igv.js/wiki). The image is a bit difficult to make out, so can view the region directly with [this link](https://s3.us-east-2.amazonaws.com/ccrs/ccr.html#12:52,179,723-52,189,901). Dark red regions reflect CCRs at or above the 99th percentile.
 
 ![scn8a](/img/blog/scn8a.png){: .img-responsive }
 
