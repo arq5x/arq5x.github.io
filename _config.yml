@@ -42,26 +42,6 @@ people:
     - title: twitter
       url: https://twitter.com/brent_p
 
-- name: Ryan Layer
-  pic: ryan
-  position: Postdoctoral Research Associate
-  social:
-    - title: github
-      url: https://github.com/ryanlayer
-    - title: graduation-cap
-      url: https://scholar.google.com/citations?user=BE2DZ_kAAAAJ&hl=en&oi=ao 
-    - title: twitter
-      url: https://twitter.com/ryanlayer
-
-- name: Meenal Gupta
-  pic: meenal.small
-  position: Postdoctoral Research Associate
-  social:
-    - title: github
-      url: https://github.com/Meenal002
-    - title: graduation-cap
-      url: https://scholar.google.com/citations?user=ZGkMQ5AAAAAJ&hl=en&oi=ao
-
 - name: Brian Lohman
   pic: lohman.small
   position: Postdoctoral Research Associate
@@ -78,9 +58,18 @@ people:
     - title: github
       url: https://github.com/adw222
 
+- name: Meenal Gupta
+  pic: meenal.small
+  position: Sr. Research Scientist
+  social:
+    - title: github
+      url: https://github.com/Meenal002
+    - title: graduation-cap
+      url: https://scholar.google.com/citations?user=ZGkMQ5AAAAAJ&hl=en&oi=ao
+
 - name: Tom Nicholas
   pic: nicholas
-  position: Sr. Research Associate
+  position: Sr. Research Scientist
   social:
     - title: twitter
       url: https://twitter.com/FakeDrTom
@@ -100,6 +89,15 @@ people:
   social:
     - title: github
       url: https://github.com/38
+
+- name: Joe Brown
+  pic: joe
+  position: Programmer / Staff Scientist
+  social:
+    - title: github
+      url: https://github.com/brwnj
+    - title: twitter
+      url: https://twitter.com/brwn_j
 
 - name: Jim Havrilla
   pic: jim
@@ -187,6 +185,17 @@ people:
 
 # Alumni
 alumni:
+- name: Ryan Layer
+  pic: ryan
+  position: Assistant Professor at CU-Boulder
+  social:
+    - title: github
+      url: https://github.com/ryanlayer
+    - title: graduation-cap
+      url: https://scholar.google.com/citations?user=BE2DZ_kAAAAJ&hl=en&oi=ao 
+    - title: twitter
+      url: https://twitter.com/ryanlayer
+
 - name: Uma Paila
   pic: uma
   position: Postdoctoral Scientist
