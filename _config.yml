@@ -99,25 +99,6 @@ people:
     - title: twitter
       url: https://twitter.com/brwn_j
 
-- name: Jim Havrilla
-  pic: jim
-  position: Graduate Student
-  bio:
-  >
-    By integrating population scale datasets of genetic variation,
-    my research seeks to identify highly constrained coding regions
-    (CCRs) in the human genome. My central hypithesis is that these
-    critical coding regions will be devoid of genetic variation in
-    healthy individuals because mutations therein will lead to severe
-    developmental phenotypes and, in the most extreme case, embryonic
-    lethality. I am also developing new analysis and visualization
-    tools to prioritize clinical variants based on their predicted
-    pathogenicity.
-  social:
-    - title: github
-      url: https://github.com/jimhavrilla
-    - title: twitter
-      url: https://twitter.com/jim_havrilla
 
 - name: Tom Sasani
   pic: sasani
@@ -183,6 +164,27 @@ people:
     - title: github
       url: https://github.com/mikecormier
 
+- name: Harriet Dashnow
+  pic: harriet
+  position: Postdoctoral Scientist
+  bio:
+  >
+  social:
+    - title: github
+      url: https://github.com/hdashnow
+    - title: twitter
+      url: https://twitter.com/hdashnow
+
+- name: Simone Longo
+  pic: simone
+  position: Graduate Student
+  bio:
+  >
+  social:
+    - title: github
+      url: https://github.com/SpacemanSpiff7
+
+
 # Alumni
 alumni:
 - name: Ryan Layer
@@ -195,6 +197,26 @@ alumni:
       url: https://scholar.google.com/citations?user=BE2DZ_kAAAAJ&hl=en&oi=ao 
     - title: twitter
       url: https://twitter.com/ryanlayer
+
+- name: Jim Havrilla
+  pic: jim
+  position: Graduate Student
+  bio:
+  >
+    By integrating population scale datasets of genetic variation,
+    my research seeks to identify highly constrained coding regions
+    (CCRs) in the human genome. My central hypithesis is that these
+    critical coding regions will be devoid of genetic variation in
+    healthy individuals because mutations therein will lead to severe
+    developmental phenotypes and, in the most extreme case, embryonic
+    lethality. I am also developing new analysis and visualization
+    tools to prioritize clinical variants based on their predicted
+    pathogenicity.
+  social:
+    - title: github
+      url: https://github.com/jimhavrilla
+    - title: twitter
+      url: https://twitter.com/jim_havrilla
 
 - name: Uma Paila
   pic: uma
@@ -224,6 +246,8 @@ alumni:
   social:
     - title: github
       url: https://github.com/nathanwilk7
+
+
 
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
