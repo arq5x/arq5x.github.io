@@ -10,6 +10,14 @@ body {
     color: #{{ site.color.secondary-dark }};
 }
 
+.big-text {
+    font-size: 24px
+}
+
+.news {
+    padding-top: 35px;
+}
+
 .text-muted {
     color: #777;
 }
@@ -55,6 +63,10 @@ h6 {
     text-transform: uppercase;
     font-family: 'Josefin Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+}
+
+h1 {
+    color: #{{ site.color.primary }};
 }
 
 .img-centered {
@@ -837,26 +849,4 @@ ul.social-buttons li a:active {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
-}
-
-::-moz-selection {
-    text-shadow: none;
-    background: #{{ site.color.primary }};
-}
-
-::selection {
-    text-shadow: none;
-    background: #{{ site.color.primary }};
-}
-
-img::selection {
-    background: 0 0;
-}
-
-img::-moz-selection {
-    background: 0 0;
-}
-
-body {
-    webkit-tap-highlight-color: #{{ site.color.primary }};
 }
