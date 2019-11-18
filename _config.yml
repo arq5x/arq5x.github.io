@@ -11,7 +11,7 @@ description: "The Quinlan Laboratory at The University of Utah."
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary: DD1144
-  secondary: DD1144  
+  secondary: DD1144
   secondary-dark: 737373
 
 category-list: [software, blog]
@@ -27,7 +27,7 @@ people:
     - title: twitter
       url: https://twitter.com/aaronquinlan
     - title: graduation-cap
-      url: https://scholar.google.com/citations?user=QwVZZKsAAAAJ&hl=en&oi=ao  
+      url: https://scholar.google.com/citations?user=QwVZZKsAAAAJ&hl=en&oi=ao
     - title: file-text-o
       url: https://github.com/arq5x/vitae/raw/master/quinlan.cv.pdf
 
@@ -38,18 +38,9 @@ people:
     - title: github
       url: https://github.com/brentp
     - title: graduation-cap
-      url: https://scholar.google.com/citations?user=tDf0VkUAAAAJ&hl=en&oi=ao 
+      url: https://scholar.google.com/citations?user=tDf0VkUAAAAJ&hl=en&oi=ao
     - title: twitter
       url: https://twitter.com/brent_p
-
-- name: Brian Lohman
-  pic: lohman.small
-  position: Postdoctoral Research Associate
-  social:
-    - title: github
-      url: https://github.com/BrianLohman
-    - title: graduation-cap
-      url: https://scholar.google.com/citations?user=3EZjoXkAAAAJ&hl=en&oi=ao
 
 - name: Amelia Wallace
   pic: wallace.small
@@ -103,7 +94,7 @@ people:
 - name: Tom Sasani
   pic: sasani
   position: Graduate Student
-  bio: 
+  bio:
   >
     Currently, my research is focused on understanding the landscape
     of de novo mutation in the human genome. Using deep sequencing data
@@ -122,7 +113,7 @@ people:
   position: Graduate Student
   bio:
   >
-    My research is to understand the role and extent of allele-specific 
+    My research is to understand the role and extent of allele-specific
     expression in human tissues. My goal is to inform how genetic variation
     leads to phenotypic heterogeneity and disease, with a focus on neurological
     disorders and potential applications for personalized medicine. This research
@@ -154,7 +145,7 @@ people:
     - title: github
       url: https://github.com/jbelyeu
 
-- name: Michael Cormier 
+- name: Michael Cormier
   pic: cormier
   position: Graduate Student
   bio:
@@ -187,6 +178,15 @@ people:
 
 # Alumni
 alumni:
+- name: Brian Lohman
+  pic: lohman.small
+  position: Postdoctoral Research Associate
+  social:
+    - title: github
+      url: https://github.com/BrianLohman
+    - title: graduation-cap
+      url: https://scholar.google.com/citations?user=3EZjoXkAAAAJ&hl=en&oi=ao
+
 - name: Ryan Layer
   pic: ryan
   position: Assistant Professor at CU-Boulder
@@ -194,7 +194,7 @@ alumni:
     - title: github
       url: https://github.com/ryanlayer
     - title: graduation-cap
-      url: https://scholar.google.com/citations?user=BE2DZ_kAAAAJ&hl=en&oi=ao 
+      url: https://scholar.google.com/citations?user=BE2DZ_kAAAAJ&hl=en&oi=ao
     - title: twitter
       url: https://twitter.com/ryanlayer
 
@@ -230,7 +230,7 @@ alumni:
   position: Programmer
   social:
     - title: github
-      url: https://github.com/nkindlon    
+      url: https://github.com/nkindlon
 
 - name: John Kubinski
   pic: john
