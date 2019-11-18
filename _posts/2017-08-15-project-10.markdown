@@ -3,7 +3,7 @@ title: indexcov
 category: software
 subtitle: indexcov - crazy fast genome coverage estimates
 layout: blog_default
-modal-id: 9
+modal-id: 10
 img: indexcov.png
 thumbnail: indexcov.png
 alt: indexcov.png
