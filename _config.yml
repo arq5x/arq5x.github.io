@@ -90,24 +90,6 @@ people:
     - title: twitter
       url: https://twitter.com/brwn_j
 
-
-- name: Tom Sasani
-  pic: sasani
-  position: Graduate Student
-  bio:
-  >
-    Currently, my research is focused on understanding the landscape
-    of de novo mutation in the human genome. Using deep sequencing data
-    from large, multi-generational pedigrees, I am developing an accurate
-    estimate of the human mutation rate, and assessing the influence of
-    relevant molecular processes (recombination, DNA replication, etc.)
-    on this rate. Previously, as part of a collaboration with Nels Elde’s
-    lab, I used the Oxford Nanopore sequencing platform to investigate
-    adaptive structural variation in evolving poxvirus genomes.
-  social:
-    - title: github
-      url: https://github.com/tomsasani
-
 - name: Stephanie Kravitz
   pic: kravitz
   position: Graduate Student
@@ -175,9 +157,46 @@ people:
     - title: github
       url: https://github.com/SpacemanSpiff7
 
+- name: John Chamberlin
+  pic: john_c
+  position: Graduate Student
+  bio:
+  >
+  social:
+  - title: twitter
+      url: https://twitter.com/jtchamberlin
+
+- name: Jason Kunisaki
+  pic: jason_k
+  position: Graduate Student
+  bio:
+  >
+  social:
+  - title: github
+      url: https://github.com/jkunisak
+  - title: twitter
+      url: https://twitter.com/jkunisaki
+
 
 # Alumni
 alumni:
+- name: Tom Sasani
+  pic: sasani
+  position: Graduate Student
+  bio:
+  >
+    Currently, my research is focused on understanding the landscape
+    of de novo mutation in the human genome. Using deep sequencing data
+    from large, multi-generational pedigrees, I am developing an accurate
+    estimate of the human mutation rate, and assessing the influence of
+    relevant molecular processes (recombination, DNA replication, etc.)
+    on this rate. Previously, as part of a collaboration with Nels Elde’s
+    lab, I used the Oxford Nanopore sequencing platform to investigate
+    adaptive structural variation in evolving poxvirus genomes.
+social:
+    - title: github
+      url: https://github.com/tomsasani
+
 - name: Brian Lohman
   pic: lohman.small
   position: Postdoctoral Research Associate
