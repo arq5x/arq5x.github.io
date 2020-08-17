@@ -163,7 +163,7 @@ people:
   bio:
   >
   social:
-  - title: twitter
+    - title: twitter
       url: https://twitter.com/jtchamberlin
 
 - name: Jason Kunisaki
@@ -172,9 +172,9 @@ people:
   bio:
   >
   social:
-  - title: github
+    - title: github
       url: https://github.com/jkunisak
-  - title: twitter
+    - title: twitter
       url: https://twitter.com/jkunisaki
 
 
