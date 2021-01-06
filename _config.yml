@@ -89,19 +89,12 @@ people:
       url: https://github.com/brwnj
     - title: twitter
       url: https://twitter.com/brwn_j
+    - title: graduation-cap
+      url: https://scholar.google.com/citations?user=7yIFVSQAAAAJ&hl=en
 
 - name: Stephanie Kravitz
   pic: kravitz
   position: Graduate Student
-  bio:
-  >
-    My research is to understand the role and extent of allele-specific
-    expression in human tissues. My goal is to inform how genetic variation
-    leads to phenotypic heterogeneity and disease, with a focus on neurological
-    disorders and potential applications for personalized medicine. This research
-    combines statistical modeling of large, publicly available, genomics datasets
-    as well as wet lab approaches such as histology, imaging, and single cell
-    genomics experiments.
   social:
     - title: github
       url: https://github.com/snkravitz
@@ -111,18 +104,6 @@ people:
 - name: Jonathan Belyeu
   pic: belyeu2
   position: Graduate Student
-  bio:
-  >
-    I’m researching structural variation in human genomes, motivated
-    by the unique challenges arising from the complexity of finding
-    chromosomal rearrangements with short read sequencing technologies.
-    I’m developing computational approaches to more accurately discover
-    structural variation, especially in repetitive regions of the genome.
-    I am devising new visualization techniques and approaches to identify
-    false positive structural variant calls that come from existing software.
-    I am also investigating de novo structural variation and working on
-    better methods to identify these new structural variants in families,
-    which will empower research into spontaneous genetic disease.
   social:
     - title: github
       url: https://github.com/jbelyeu
@@ -130,9 +111,6 @@ people:
 - name: Michael Cormier
   pic: cormier
   position: Graduate Student
-  bio:
-  >
-      TODO
   social:
     - title: github
       url: https://github.com/mikecormier
@@ -140,8 +118,6 @@ people:
 - name: Harriet Dashnow
   pic: harriet
   position: Postdoctoral Scientist
-  bio:
-  >
   social:
     - title: github
       url: https://github.com/hdashnow
@@ -151,8 +127,6 @@ people:
 - name: Simone Longo
   pic: simone
   position: Graduate Student
-  bio:
-  >
   social:
     - title: github
       url: https://github.com/SpacemanSpiff7
@@ -160,8 +134,6 @@ people:
 - name: John Chamberlin
   pic: john_c
   position: Graduate Student
-  bio:
-  >
   social:
     - title: twitter
       url: https://twitter.com/jtchamberlin
@@ -169,31 +141,18 @@ people:
 - name: Jason Kunisaki
   pic: jason_k
   position: Graduate Student
-  bio:
-  >
   social:
     - title: github
       url: https://github.com/jkunisak
     - title: twitter
       url: https://twitter.com/jkunisaki
 
-
 # Alumni
 alumni:
 - name: Tom Sasani
   pic: sasani
   position: Graduate Student
-  bio:
-  >
-    Currently, my research is focused on understanding the landscape
-    of de novo mutation in the human genome. Using deep sequencing data
-    from large, multi-generational pedigrees, I am developing an accurate
-    estimate of the human mutation rate, and assessing the influence of
-    relevant molecular processes (recombination, DNA replication, etc.)
-    on this rate. Previously, as part of a collaboration with Nels Elde’s
-    lab, I used the Oxford Nanopore sequencing platform to investigate
-    adaptive structural variation in evolving poxvirus genomes.
-social:
+  social:
     - title: github
       url: https://github.com/tomsasani
 
@@ -220,17 +179,6 @@ social:
 - name: Jim Havrilla
   pic: jim
   position: Graduate Student
-  bio:
-  >
-    By integrating population scale datasets of genetic variation,
-    my research seeks to identify highly constrained coding regions
-    (CCRs) in the human genome. My central hypithesis is that these
-    critical coding regions will be devoid of genetic variation in
-    healthy individuals because mutations therein will lead to severe
-    developmental phenotypes and, in the most extreme case, embryonic
-    lethality. I am also developing new analysis and visualization
-    tools to prioritize clinical variants based on their predicted
-    pathogenicity.
   social:
     - title: github
       url: https://github.com/jimhavrilla
@@ -265,9 +213,6 @@ social:
   social:
     - title: github
       url: https://github.com/nathanwilk7
-
-
-
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
