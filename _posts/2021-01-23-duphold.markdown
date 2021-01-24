@@ -1,0 +1,12 @@
+---
+title: duphold
+category: software
+subtitle:
+description: Uphold your DUP and DEL calls. SV callers like lumpy look at split-reads and pair distances to find structural variants. This tool is a fast way to add depth information to those calls. This can be used as additional information for filtering variants; for example we will be skeptical of deletion calls that do not have lower than average coverage compared to regions with similar gc-content.
+thumbnail: code.png
+code: https://github.com/brentp/duphold
+docs: https://github.com/brentp/duphold
+demo:
+manuscript: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6479422/
+workflow:
+---

@@ -1,0 +1,12 @@
+---
+title: somalier
+category: software
+subtitle:
+description: Extract informative sites, evaluate relatedness, and perform quality-control on BAM, CRAM, BCF, VCF, and GVCF. <code>somalier</code> makes checking any number of samples for identity easy directly from the alignments.
+thumbnail: somalier.png
+code: https://github.com/brentp/somalier
+docs: https://github.com/brentp/somalier
+demo: https://brentp.github.io/somalier/ex.html
+manuscript: https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-020-00761-2
+workflow:
+---

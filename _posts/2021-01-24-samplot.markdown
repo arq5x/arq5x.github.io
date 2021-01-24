@@ -1,0 +1,12 @@
+---
+title: samplot
+category: software
+subtitle:
+description: <code>samplot</code> is a command line tool for rapid, multi-sample structural variant visualization. <code>samplot</code> takes SV coordinates and bam files and produces high-quality images that highlight any alignment and depth signals that substantiate the SV.
+thumbnail: samplot.png
+code: https://github.com/ryanlayer/samplot/
+docs: https://github.com/ryanlayer/samplot/
+demo: https://rawcdn.githack.com/ryanlayer/samplot/2fb0b75232702fd696f308a42d436f8f8d2e5496/test/data/test_site/index.html
+manuscript: https://www.biorxiv.org/content/10.1101/2020.09.23.310110v3
+workflow:
+---

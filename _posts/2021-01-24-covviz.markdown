@@ -1,0 +1,12 @@
+---
+title: covviz
+category: software
+subtitle: Multi-sample genome coverage viewer to observe large, coverage-based anomalies
+description: A many-sample coverage browser. The aim of <code>covviz</code> is to highlight regions of significant and sustained deviation of coverage depth from the majority of samples.
+thumbnail: covviz.png
+code: https://github.com/brwnj/covviz
+docs: https://github.com/brwnj/covviz
+demo: https://brwnj.github.io/covviz/
+manuscript:
+workflow:
+---

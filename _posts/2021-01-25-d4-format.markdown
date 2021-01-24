@@ -1,0 +1,12 @@
+---
+title: d4-format
+category: software
+subtitle:  The D4 Quantatative Data Format
+description:  The D4 Quantatative Data Format. We sought to improve on existing formats such as BigWig and compressed BED files by creating the Dense Depth Data Dump (D4) format and tool suite. The D4 format is adaptive in that it profiles a random sample of aligned sequence depth from the input BAM or CRAM file to determine an optimal encoding that minimizes file size, while also enabling fast data access. We show that D4 uses less disk space for both RNA-Seq and whole-genome sequencing and offers 3 to 440 fold speed improvements over existing formats for random access, aggregation and summarization for scalable downstream analyses that would be otherwise intractable.
+thumbnail: code.png
+code: https://github.com/38/d4-format
+docs: https://github.com/38/d4-format
+demo:
+manuscript:
+workflow:
+---

@@ -1,0 +1,12 @@
+---
+title: smoove-nf
+category: software
+subtitle:
+description: Nextflow implementation of the smoove workflow, integrating several other tools meant to facilate variant calling and quality control of discovered variants.
+thumbnail: smoove-nf.png
+code: https://github.com/brwnj/smoove-nf
+docs: https://github.com/brwnj/smoove-nf
+demo:
+manuscript:
+workflow:
+---
