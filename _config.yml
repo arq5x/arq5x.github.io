@@ -42,12 +42,14 @@ people:
     - title: twitter
       url: https://twitter.com/brent_p
 
-- name: Amelia Wallace
-  pic: wallace.small
-  position: Postdoctoral Research Associate
+- name: Tom Nicholas
+  pic: nicholas
+  position: Sr. Research Scientist
   social:
     - title: github
-      url: https://github.com/adw222
+      url: https://github.com/fakedrtom/
+    - title: twitter
+      url: https://twitter.com/FakeDrTom
 
 - name: Meenal Gupta
   pic: meenal.small
@@ -58,12 +60,12 @@ people:
     - title: graduation-cap
       url: https://scholar.google.com/citations?user=ZGkMQ5AAAAAJ&hl=en&oi=ao
 
-- name: Tom Nicholas
-  pic: nicholas
-  position: Sr. Research Scientist
+- name: Hao Hou
+  pic: hao
+  position: Programmer / Staff Scientist
   social:
-    - title: twitter
-      url: https://twitter.com/FakeDrTom
+    - title: github
+      url: https://github.com/38
 
 - name: Peter McHale
   pic: mchale.small
@@ -74,16 +76,9 @@ people:
     - title: graduation-cap
       url: https://scholar.google.com/citations?user=YEgElgMAAAAJ&hl=en
 
-- name: Hao Hou
-  pic: hao
-  position: Programmer / Staff Scientist
-  social:
-    - title: github
-      url: https://github.com/38
-
 - name: Joe Brown
   pic: joe
-  position: Programmer / Staff Scientist
+  position: Data Engineer / Staff Scientist
   social:
     - title: github
       url: https://github.com/brwnj
@@ -91,6 +86,22 @@ people:
       url: https://twitter.com/brwn_j
     - title: graduation-cap
       url: https://scholar.google.com/citations?user=7yIFVSQAAAAJ&hl=en
+
+- name: Amelia Wallace
+  pic: wallace.small
+  position: Postdoctoral Research Associate
+  social:
+    - title: github
+      url: https://github.com/adw222
+
+- name: Harriet Dashnow
+  pic: harriet
+  position: Postdoctoral Scientist
+  social:
+    - title: github
+      url: https://github.com/hdashnow
+    - title: twitter
+      url: https://twitter.com/hdashnow
 
 - name: Stephanie Kravitz
   pic: kravitz
@@ -114,15 +125,6 @@ people:
   social:
     - title: github
       url: https://github.com/mikecormier
-
-- name: Harriet Dashnow
-  pic: harriet
-  position: Postdoctoral Scientist
-  social:
-    - title: github
-      url: https://github.com/hdashnow
-    - title: twitter
-      url: https://twitter.com/hdashnow
 
 - name: Simone Longo
   pic: simone

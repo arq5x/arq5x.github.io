@@ -1,0 +1,12 @@
+---
+title: jigv
+category: software
+subtitle:
+description: igv.js server and automatic configuration to view bam/cram/vcf/bed. igv.js requires that the files are hosted on a server, like apache or nginx and it requires writing html and javascript. In a single binary, jigv provides a server and some default configuration, javascript, and HTML enabling a simple entrypoint... <pre><code>jigv --open-browser --region chr1:34566-34999 *.bam /path/to/some.cram my.vcf.gz</code></pre>
+thumbnail: jigv.png
+code: https://github.com/brentp/jigv
+docs: https://github.com/brentp/jigv
+demo:
+manuscript:
+workflow:
+---

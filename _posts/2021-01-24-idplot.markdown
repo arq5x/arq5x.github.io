@@ -1,0 +1,11 @@
+---
+title: idplot
+category: software
+subtitle: compare sequences to a shared root reference sequence.
+description: Designed to accelerate SARS-CoV-2 research, <code>idplot</code> allows one to quickly compare similar sequences (*.fasta) to a reference (.fasta) with options to inspect recombination and similarity within an interactive report.
+thumbnail: idplot.png
+code: https://github.com/brwnj/idplot
+docs: https://github.com/brwnj/idplot
+demo: https://brwnj.github.io/idplot/
+manuscript:
+---

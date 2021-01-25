@@ -1,0 +1,12 @@
+---
+title: seqcover
+category: software
+subtitle: seqcover allows user to view coverage for hundreds of genes and dozens of samples
+description: <code>seqcover</code> is a tool for viewing and evaluating depth-of-coverage with the following aims...<ul><li>show a global view where it's easy to see problematic samples and genes</li><li>offer an interactive gene-wise view to explore coverage characteristics of individual samples within each gene</li><li>not require a server (single html page)</li><li>be responsive for up to 20 samples * 200 genes and be useful for a single-sample see how we do this</li><li>highlight outlier samples based on any number of (summarized) background samples</li></ul><br>
+thumbnail: seqcover.png
+code: https://github.com/brentp/seqcover
+docs: https://github.com/brentp/seqcover
+demo: https://brentp.github.io/seqcover
+manuscript:
+workflow: https://github.com/brwnj/seqcover-nf
+---

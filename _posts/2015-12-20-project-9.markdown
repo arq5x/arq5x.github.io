@@ -9,9 +9,6 @@ thumbnail: giggle.png
 alt: giggle.png
 docs: https://github.com/ryanlayer/giggle
 code: https://github.com/ryanlayer/giggle
-manuscript: https://github.com/ryanlayer/giggle
-[comment]: # fix by putting your giggle slides in /lectures and updating link
-slides: /lectures/giggle_pub.pdf
 
 description: Giggle is Google for genomic features and intervals. That is, scalable, multi-file index for fast queries of genomic intervals.
 ---

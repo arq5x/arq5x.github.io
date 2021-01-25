@@ -6,46 +6,44 @@
             <h3 class="section-subheading text-muted">We strive to develop innovative, well-tested, and well-documented tools for genome research.</h3>
         </div>
 
-        {% assign loopindex = 0 %}
         {% for post in site.categories.software %}
-            {% assign loopindex = loopindex | plus: 1 %}
-            {% assign rowfinder = loopindex | modulo: 3 %}
-                {% if rowfinder == 1 %}
-                    <div class="row">
-                        <div class="col-md-4 text-center">
-                            <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-                                <img src="img/software/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
-                            </a>
-                            <div class="portfolio-caption">
-                                <h3>{{ post.title }}</h4>
-                                <p class="text-muted">{{ post.subtitle }}</p>
-                            </div>
-                        </div>
-                {% elsif rowfinder == 0 %}
-                        <div class="col-md-4 text-center">
-                            <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-                                <img src="img/software/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
-                            </a>
-                            <div class="portfolio-caption">
-                                <h3>{{ post.title }}</h4>
-                                <p class="text-muted">{{ post.subtitle }}</p>
-                            </div>
-                        </div>
-                    </div>
-                {% else %}
-                    <div class="col-md-4 text-center">
-                        <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-                            <img src="img/software/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
-                        </a>
-                        <div class="portfolio-caption">
-                            <h3>{{ post.title }}</h4>
-                            <p class="text-muted">{{ post.subtitle }}</p>
-                        </div>
-                    </div>
-                {% endif %}
+            <div class="row">
+                <div class="col-md-2 software-img-offset">
+                    <img src="img/software/{{ post.thumbnail }}" class="img-responsive img-centered center-block" alt="{{ post.alt }}">
+                </div>
+                <div class="col-md-10">
+                    <h2>{{ post.title }}</h2>
+                    <p>{{ post.description }}</p>
+                    <ul class="list-inline">
+                        {% if post.manuscript %}
+                            <li>
+                                <a href={{ post.manuscript }} class="software-link">Manuscript</i></a>
+                            </li>
+                        {% endif %}
+                        {% if post.code %}
+                            <li>
+                                <a href={{ post.code }} class="software-link">Code</a>
+                            </li>
+                        {% endif %}
+                        {% if post.docs %}
+                            <li>
+                                <a href={{ post.docs }} class="software-link">Docs</a>
+                            </li>
+                        {% endif %}
+                        {% if post.demo %}
+                            <li>
+                                <a href={{ post.demo }} class="software-link">Demo</a>
+                            </li>
+                        {% endif %}
+                        {% if post.workflow %}
+                            <li>
+                                <a href={{ post.workflow }} class="software-link">Workflow</a>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+            <hr class="star-primary">
         {% endfor %}
-        {% if rowfinder != 0 %}
-        </div>
-        {% endif %}
     </div>
 </section>

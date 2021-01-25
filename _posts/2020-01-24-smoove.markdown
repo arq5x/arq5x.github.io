@@ -1,0 +1,11 @@
+---
+title: smoove
+category: software
+subtitle: structural variant calling and genotyping with existing tools, but, smoothly.
+description: <code>smoove</code> simplifies and speeds calling and genotyping SVs for short reads. It also improves specificity by removing many spurious alignment signals that are indicative of low-level noise and often contribute to spurious calls.
+thumbnail: code.png
+code: https://github.com/brentp/smoove
+docs: https://github.com/brentp/smoove
+manuscript:
+workflow: https://github.com/brwnj/smoove-nf
+---
