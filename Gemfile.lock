@@ -19,11 +19,12 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    rexml (3.2.4)
+    rexml (3.2.5)
     webrick (1.7.0)
 
 PLATFORMS
   x86_64-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   em-websocket (~> 0.5.2)
