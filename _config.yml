@@ -31,17 +31,6 @@ people:
     - title: file-text-o
       url: https://github.com/arq5x/vitae/raw/master/quinlan.cv.pdf
 
-- name: Brent Pedersen
-  pic: brent
-  position: Senior Programmer
-  social:
-    - title: github
-      url: https://github.com/brentp
-    - title: graduation-cap
-      url: https://scholar.google.com/citations?user=tDf0VkUAAAAJ&hl=en&oi=ao
-    - title: twitter
-      url: https://twitter.com/brent_p
-
 - name: Tom Nicholas
   pic: nicholas
   position: Sr. Research Scientist
@@ -87,13 +76,6 @@ people:
     - title: graduation-cap
       url: https://scholar.google.com/citations?user=7yIFVSQAAAAJ&hl=en
 
-- name: Amelia Wallace
-  pic: wallace.small
-  position: Postdoctoral Research Associate
-  social:
-    - title: github
-      url: https://github.com/adw222
-
 - name: Harriet Dashnow
   pic: harriet
   position: Postdoctoral Scientist
@@ -112,26 +94,12 @@ people:
     - title: twitter
       url: https://twitter.com/snkravitz
 
-- name: Jonathan Belyeu
-  pic: belyeu2
-  position: Graduate Student
-  social:
-    - title: github
-      url: https://github.com/jbelyeu
-
 - name: Michael Cormier
   pic: cormier
   position: Graduate Student
   social:
     - title: github
       url: https://github.com/mikecormier
-
-- name: Simone Longo
-  pic: simone
-  position: Graduate Student
-  social:
-    - title: github
-      url: https://github.com/SpacemanSpiff7
 
 - name: John Chamberlin
   pic: john_c
@@ -151,16 +119,41 @@ people:
 
 # Alumni
 alumni:
+- name: Brent Pedersen
+  pic: brent
+  position: University of Utrecht
+  social:
+    - title: github
+      url: https://github.com/brentp
+    - title: graduation-cap
+      url: https://scholar.google.com/citations?user=tDf0VkUAAAAJ&hl=en&oi=ao
+    - title: twitter
+      url: https://twitter.com/brent_p
+
+- name: Jonathan Belyeu
+  pic: belyeu2
+  position: Illumina
+  social:
+    - title: github
+      url: https://github.com/jbelyeu
+
+- name: Amelia Wallace
+  pic: wallace.small
+  position: Adaptive Biotechnologies
+  social:
+    - title: github
+      url: https://github.com/adw222
+
 - name: Tom Sasani
   pic: sasani
-  position: Graduate Student
+  position: Recursion
   social:
     - title: github
       url: https://github.com/tomsasani
 
 - name: Brian Lohman
   pic: lohman.small
-  position: Postdoctoral Research Associate
+  position: University of Utah
   social:
     - title: github
       url: https://github.com/BrianLohman
@@ -180,7 +173,7 @@ alumni:
 
 - name: Jim Havrilla
   pic: jim
-  position: Graduate Student
+  position: Children's Hospital of Philadelphia
   social:
     - title: github
       url: https://github.com/jimhavrilla
