@@ -40,15 +40,6 @@ people:
     - title: twitter
       url: https://twitter.com/FakeDrTom
 
-- name: Meenal Gupta
-  pic: meenal.small
-  position: Sr. Research Scientist
-  social:
-    - title: github
-      url: https://github.com/Meenal002
-    - title: graduation-cap
-      url: https://scholar.google.com/citations?user=ZGkMQ5AAAAAJ&hl=en&oi=ao
-
 - name: Hao Hou
   pic: hao
   position: Programmer / Staff Scientist
@@ -117,8 +108,26 @@ people:
     - title: twitter
       url: https://twitter.com/jkunisaki
 
+- name: Laurel Hiatt
+  pic: laurel
+  position: Graduate Student
+  social:
+    - title: github
+      url: https://github.com/laurelhiatt
+    - title: twitter
+      url: https://twitter.com/laurel_hiatt
+
 # Alumni
 alumni:
+- name: Meenal Gupta
+  pic: meenal.small
+  position: Research Scientist
+  social:
+    - title: github
+      url: https://github.com/Meenal002
+    - title: graduation-cap
+      url: https://scholar.google.com/citations?user=ZGkMQ5AAAAAJ&hl=en&oi=ao
+
 - name: Brent Pedersen
   pic: brent
   position: University of Utrecht
